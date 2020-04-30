@@ -1,0 +1,22 @@
+{
+  "name": "svg-icon-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir -p docs/assets && run-p build:*",
+    "build:favicon": "echo 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==' | base64 -D > docs/favicon.png",
+    "build:html": "html-minifier -c .htmlminifierrc.json --input-dir src --output-dir docs",
+    "build:svg": "svgo -f src/assets -o docs/assets",
+    "clean": "rm -rf docs",
+    "start": "serve docs"
+  },
+  "author": "Cory Reed",
+  "license": "MIT",
+  "devDependencies": {
+    "html-minifier": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "serve": "^11.3.0",
+    "svgo": "^1.3.2"
+  }
+}

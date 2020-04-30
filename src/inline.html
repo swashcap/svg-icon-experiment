@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SVG Sprite Demo: External</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.png" />
+    <style>
+      /* Global styles */
+      *,
+      *:after,
+      *:before {
+        box-sizing: border-box;
+      }
+      html {
+        background: linen;
+        color: black;
+        font-family: sans-serif;
+        line-height: 1.5;
+      }
+      body {
+        margin: 0 auto;
+        max-width: 36em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+      }
+      p {
+        margin: 0.25em 0 0;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -0.5em;
+        margin-right: -0.5em;
+      }
+      .col {
+        margin-bottom: 1.5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        width: 25%;
+      }
+      .center {
+        text-align: center;
+      }
+      .icn {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <svg style="display: none;">
+      <style>
+        .a {
+          fill: none;
+        }
+        .b {
+          stroke: none;
+        }
+        .c {
+          fill: currentColor;
+        }
+        .d {
+          stroke: currentColor;
+        }
+        .e {
+          stroke-width: 2;
+        }
+        .f {
+          stroke-width: 1.5;
+        }
+        .g {
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        }
+      </style>
+      <defs>
+        <!-- Arrow Down -->
+        <g id="icn-a">
+          <rect class="c h" x="11" y="5" width="2" height="14" rx="1"></rect>
+          <polyline class="a d e g" points="5 13 12 19 19 13"></polyline>
+        </g>
+
+        <!-- Arrow Left -->
+        <g id="icn-b">
+          <rect class="c" x="5" y="11" width="14" height="2" rx="1"></rect>
+          <polyline class="a d e g" points="11 5 5 12 11 19"></polyline>
+        </g>
+
+        <!-- Arrow Right -->
+        <g id="icn-c">
+          <rect class="c" x="5" y="11" width="14" height="2" rx="1"></rect>
+          <polyline class="a d e g" points="13 5 19 12 13 19"></polyline>
+        </g>
+
+        <!-- Arrow Up -->
+        <g id="icn-d">
+          <rect class="c" x="11" y="5" width="2" height="14" rx="1"></rect>
+          <polyline class="a d e g" points="5 11 12 5 19 11"></polyline>
+        </g>
+
+        <!-- Caret Down -->
+        <polyline
+          id="icn-e"
+          class="a d e g"
+          points="6 10 12 15 18 10"
+        ></polyline>
+
+        <!-- Caret Left -->
+        <polyline
+          id="icn-f"
+          class="a d e g"
+          points="14 6 9 12 14 18"
+        ></polyline>
+
+        <!-- Caret Right -->
+        <polyline
+          id="icn-g"
+          class="a d e g"
+          points="10 6 15 12 10 18"
+        ></polyline>
+
+        <!-- Caret Up -->
+        <polyline
+          id="icn-h"
+          class="a d e g"
+          points="6 14 12 9 18 14"
+        ></polyline>
+
+        <!-- Check -->
+        <polyline
+          id="icn-i"
+          class="a d e g"
+          points="5 13 10 19 19 7"
+        ></polyline>
+
+        <!-- Clear -->
+        <g id="icn-j">
+          <circle class="a d f" cx="12" cy="12" r="11.25"></circle>
+          <line class="d e g" x1="7" y1="7" x2="17" y2="17"></line>
+          <line class="d e g" x1="7" y1="17" x2="17" y2="7"></line>
+        </g>
+
+        <!-- Edit -->
+        <g id="icn-k" transform="rotate(45, 12, 12)">
+          <path
+            class="a d f"
+            d="M14.75,6.75 L9.25,6.75 L9.25,18.7181987 L12,21.8610558 L14.75,18.7181987 L14.75,6.75 Z"
+          ></path>
+          <rect
+            class="a d f"
+            x="9.25"
+            y="2.25"
+            width="5.5"
+            height="4.5"
+            rx="2"
+          ></rect>
+        </g>
+
+        <!-- Info -->
+        <g id="icn-l">
+          <circle class="a d f" cx="12" cy="12" r="11.25"></circle>
+          <circle class="c" cx="11.5" cy="6.5" r="1.5"></circle>
+          <polyline
+            class="a d e g"
+            points="10 11 12 11 12 19 15 19 9 19"
+          ></polyline>
+        </g>
+
+        <!-- Map Pin -->
+        <g id="icn-m">
+          <path
+            class="a d f"
+            d="M12,3.75 C10.4557903,3.75 9.05777079,4.37591465 8.04580371,5.38788173 C7.03383663,6.39984881 6.40792198,7.79786832 6.40792198,9.34207802 C6.40792198,10.3259627 6.66750676,11.2924322 7.16046869,12.1439119 L12,20.5031024 L16.8395313,12.1439119 C17.6132364,10.8075123 17.7720119,9.2840235 17.4032612,7.90120838 C17.0345105,6.51839325 16.1382336,5.27625178 14.8018339,4.50254671 C13.9503542,4.00958478 12.9838847,3.75 12,3.75 Z"
+          ></path>
+          <circle class="c" cx="12" cy="9.5" r="1.5"></circle>
+        </g>
+
+        <!-- Menu -->
+        <g class="c" id="icn-n">
+          <rect x="4" y="11" width="16" height="2" rx="1"></rect>
+          <rect x="4" y="16" width="16" height="2" rx="1"></rect>
+          <rect x="4" y="6" width="16" height="2" rx="1"></rect>
+        </g>
+
+        <!-- Minus -->
+        <rect
+          id="icn-o"
+          class="c"
+          x="3"
+          y="11"
+          width="18"
+          height="2"
+          rx="1"
+        ></rect>
+
+        <!-- Plus -->
+        <g class="c" id="icn-p">
+          <rect x="11" y="3" width="2" height="18" rx="1"></rect>
+          <rect x="3" y="11" width="18" height="2" rx="1"></rect>
+        </g>
+
+        <!-- Success -->
+        <g class="c" id="icn-q">
+          <circle class="a d f" cx="12" cy="12" r="11.25"></circle>
+          <polyline class="a d e g" points="6 14 11 19 19 8"></polyline>
+        </g>
+
+        <!-- Tag -->
+        <g id="icn-r">
+          <path
+            class="a d e f"
+            d="M19,6.75 L7.93674989,6.75 C7.56577509,6.75 7.21396557,6.91477876 6.97647329,7.1997695 L2.97628121,12 L6.97647329,16.8002305 C7.21396557,17.0852212 7.56577509,17.25 7.93674989,17.25 L19,17.25 C19.345178,17.25 19.657678,17.110089 19.8838835,16.8838835 C20.110089,16.657678 20.25,16.345178 20.25,16 L20.25,8 C20.25,7.65482203 20.110089,7.34232203 19.8838835,7.11611652 C19.657678,6.88991102 19.345178,6.75 19,6.75 Z"
+          ></path>
+          <circle class="d f" cx="9" cy="12" r="1.5"></circle>
+        </g>
+
+        <!-- Warning -->
+        <g id="icn-s">
+          <rect class="c" x="11" y="9" width="2" height="7" rx="1"></rect>
+          <circle class="c" cx="12" cy="18" r="1"></circle>
+          <path
+            class="a d f"
+            d="M12,2.51167333 L1.29238476,21.25 L22.7076152,21.25 L12,2.51167333 Z"
+          ></path>
+        </g>
+
+        <!-- X -->
+        <g id="icn-t">
+          <line class="d e g" x1="6" y1="6" x2="18" y2="18"></line>
+          <line class="d e g" x1="6" y1="18" x2="18" y2="6"></line>
+        </g>
+      </defs>
+    </svg>
+    <header role="banner">
+      <h1 class="center">
+        <abbr title="Scalable Vector Graphics">SVG</abbr> Sprite Demo: External
+      </h1>
+    </header>
+    <main>
+      <div class="row">
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-a"></use>
+          </svg>
+          <p>Arrow Up</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-b"></use>
+          </svg>
+          <p>Arrow Left</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-c"></use>
+          </svg>
+          <p>Arrow Right</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-d"></use>
+          </svg>
+          <p>Arrow Up</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-e"></use>
+          </svg>
+          <p>Caret Down</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-f"></use>
+          </svg>
+          <p>Caret Left</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-g"></use>
+          </svg>
+          <p>Caret Right</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-h"></use>
+          </svg>
+          <p>Caret Up</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-i"></use>
+          </svg>
+          <p>Check</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-j"></use>
+          </svg>
+          <p>Clear</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-k"></use>
+          </svg>
+          <p>Edit</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-l"></use>
+          </svg>
+          <p>Info</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-m"></use>
+          </svg>
+          <p>Map Pin</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-n"></use>
+          </svg>
+          <p>Menu</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-o"></use>
+          </svg>
+          <p>Minus</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-p"></use>
+          </svg>
+          <p>Plus</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-q"></use>
+          </svg>
+          <p>Success</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-r"></use>
+          </svg>
+          <p>Tag</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-s"></use>
+          </svg>
+          <p>Warning</p>
+        </div>
+        <div class="center col">
+          <svg class="icn">
+            <use href="#icn-t"></use>
+          </svg>
+          <p>X</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

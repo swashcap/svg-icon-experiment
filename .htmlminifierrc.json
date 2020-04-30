@@ -1,0 +1,18 @@
+{
+  "caseSensitive": false,
+  "collapseBooleanAttributes": true,
+  "collapseWhitespace": true,
+  "html5": true,
+  "keepClosingSlash": false,
+  "minifyCSS": true,
+  "removeAttributeQuotes": true,
+  "removeComments": true,
+  "removeEmptyAttributes": true,
+  "removeEmptyElements": false,
+  "removeOptionalTags": true,
+  "removeOptionalTags": true,
+  "removeRedundantAttributes": true,
+  "removeScriptTypeAttributes": true,
+  "removeTagWhitespace": true,
+  "useShortDoctype": true
+}

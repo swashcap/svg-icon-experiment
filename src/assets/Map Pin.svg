@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Map Pin</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Map-Pin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,3.75 C10.4557903,3.75 9.05777079,4.37591465 8.04580371,5.38788173 C7.03383663,6.39984881 6.40792198,7.79786832 6.40792198,9.34207802 C6.40792198,10.3259627 6.66750676,11.2924322 7.16046869,12.1439119 L12,20.5031024 L16.8395313,12.1439119 C17.6132364,10.8075123 17.7720119,9.2840235 17.4032612,7.90120838 C17.0345105,6.51839325 16.1382336,5.27625178 14.8018339,4.50254671 C13.9503542,4.00958478 12.9838847,3.75 12,3.75 Z" id="Path-10" stroke="#000000" stroke-width="1.5"></path>
+        <circle id="Oval" fill="#000000" cx="12" cy="9.5" r="1.5"></circle>
+    </g>
+</svg>
