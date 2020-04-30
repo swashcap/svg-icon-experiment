@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
-    <title>Arrow Up</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Arrow-Up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Rectangle" fill="#000000" x="11" y="5" width="2" height="14" rx="1"></rect>
-        <polyline id="Path-5" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="5 11 12 5 19 11"></polyline>
-    </g>
+<svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <rect fill="currentColor" x="11" y="5" width="2" height="14" rx="1"></rect>
+  <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="5 11 12 5 19 11"></polyline>
 </svg>

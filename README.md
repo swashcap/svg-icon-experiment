@@ -32,7 +32,7 @@ SVGs in individual `img` elements. SVGs are minified with
 * URL: https://swashcap.github.io/svg-icon-experiment/external.html
 * Source: [src/external.html](src/external.html)
 * HTML size: 1.0 kB (gzipped)
-* Bytes transferred: 11.1 kB (gzipped)
+* Bytes transferred: 11.6 kB (gzipped)
 
 Loading experience:
 
