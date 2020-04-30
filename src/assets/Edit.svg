@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
-    <title>Edit</title>
+    <title>Edit3</title>
     <desc>Created with Sketch.</desc>
-    <g id="Edit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M17.8838835,3.94454365 C17.6398058,3.70046597 17.3199029,3.57842712 17,3.57842712 C16.6800971,3.57842712 16.3601942,3.70046597 16.1161165,3.94454365 L4.75,15.3106602 L4.75,19.25 L8.68933983,19.25 L20.0554564,7.88388348 C20.299534,7.63980579 20.4215729,7.3199029 20.4215729,7 C20.4215729,6.6800971 20.299534,6.36019421 20.0554564,6.11611652 L17.8838835,3.94454365 Z" id="Path-11" stroke="#000000" stroke-width="1.5"></path>
-        <line x1="14" y1="6" x2="18" y2="10" id="Eraser-line" stroke="#000000" stroke-width="1.5"></line>
+    <g fill="none" transform="rotate(45, 12, 12)">
+        <path d="M14.75,6.75 L9.25,6.75 L9.25,18.7181987 L12,21.8610558 L14.75,18.7181987 L14.75,6.75 Z" id="Path-14" stroke="#000000" stroke-width="1.5"></path>
+        <rect id="Rectangle" stroke="#000000" stroke-width="1.5" x="9.25" y="2.25" width="5.5" height="4.5" rx="2"></rect>
     </g>
 </svg>
