@@ -14,10 +14,13 @@ manual optimizations. HTML is minified with
 
 #### localhost, Fast 3G
 
-* TTFB (Fast 3G): ~570 ms
-* `DOMContentLoaded` (Fast 3G): ~620 ms
+* TTFB: ~570 ms
+* `DOMContentLoaded`: ~620 ms
 
 #### GitHub Pages, Slow 3G
+
+* TTFB: ~2.00 s
+* `DomContentLoaded`: ~2.00 s
 
 ### External
 
@@ -34,10 +37,13 @@ Loading experience:
 
 #### localhost, Fast 3G
 
-* TTFB (Fast 3G): ~570 ms
-* `DOMContentLoaded` (Fast 3G): ~620 ms
+* TTFB: ~570 ms
+* `DOMContentLoaded`: ~620 ms
 
 #### GitHub Pages, Slow 3G
+
+* TTFB: ~2.00 s
+* `DomContentLoaded`: ~2.00 s
 
 ## Setup
 
