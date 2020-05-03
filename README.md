@@ -10,8 +10,8 @@ with some manual optimizations. HTML is minified with
 
 * URL: https://swashcap.github.io/svg-icon-experiment/inline.html
 * Source: [src/inline.html](src/inline.html)
-* HTML size: 2.1 kB (gzipped)
-* Bytes transferred: 2.5 kB (gzipped)
+* HTML size: 1.7 kB (gzipped)
+* Bytes transferred: 2.0 kB (gzipped)
 
 #### localhost, Fast 3G
 
@@ -32,7 +32,7 @@ SVGs in individual `img` elements. SVGs are minified with
 * URL: https://swashcap.github.io/svg-icon-experiment/external.html
 * Source: [src/external.html](src/external.html)
 * HTML size: 1.0 kB (gzipped)
-* Bytes transferred: 11.6 kB (gzipped)
+* Bytes transferred: 10.8 kB (gzipped)
 
 Loading experience:
 
